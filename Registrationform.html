@@ -1,0 +1,119 @@
+<!-- 
+Create proper registration form using html and CSS(All fields should be included like textfield, dropdown, radio button, checkbox and Button)
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style>
+		/*CSS styles for the form*/
+		body
+		{
+			font-family: Arial, sans-serif;
+			background-color: rosybrown;
+		}
+
+		.container
+		{
+			width: 50%;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: mediumvioletred;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		h2
+		{
+			text-align: center;
+		}
+
+		label
+		{
+			font-weight: bold;
+		}
+
+		input[type="text"],select
+		{
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			color: black;
+		}
+
+		input[type="radio"], input[type="checkbox"]
+		{
+			margin-right: 5px;
+		}
+
+		button
+		{
+			background-color: green;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Registration Form</h2>
+		<!--Registration Form Begins -->
+		<form>
+			<!--First Name Field-->
+			<label for="firstName">First Name: </label>
+			<input type="text" id="firstName" name="firstName" required><br>
+
+			<br>
+            <!--Last Name Field-->
+			<label for="firstName">Last Name: </label>
+			<input type="text" id="firstName" name="firstName" required>
+
+			<br>
+			<!--Gender radio Buttons -->
+			<label for="gender">Gender: </label>
+			<input type="radio" id="male" name="gender" value="male">Male
+			<input type="radio" id="female" name="gender" value="female">Female<br>
+            <br>
+			<!--Country Dropdown-->
+			<label for="country">Country: </label>
+			<br>
+			<select id="country" name="country">
+				<option value="bharat">SELECT</option>
+				<option value="bharat">BHARAT</option>
+				<option value="usa">USA</option>
+				<option value="japan">JAPAN</option>
+				<option value="russia">RUSSIA</option>
+			    <option value="china">CHINA</option>
+			    <option value="pakistan">PAKISTAN</option>
+			</select>
+			<br>
+
+			<!--Interests checkboxes-->
+			<label>Interests: </label><br>
+			<input type="checkbox" id="music" name="interests" value="music">Music
+			<input type="checkbox" id="sports" name="interests" value="sports">Sports
+			<input type="checkbox" id="movies" name="interests" value="movies">Movies
+			<input type="checkbox" id="dance" name="interests" value="dance">Dance
+			<br>
+			<br>
+			<!--Password field-->
+			<label for="password">Password: </label>
+			<input type="password" id="password" name="password" required>
+			<br>
+			<br>
+
+			<!--Submit button-->
+			<button type="submit">Register</button>
+		</form>
+		<!--Registration form ends.-->
+	</div>
+</body>
+</html>
+
+
+

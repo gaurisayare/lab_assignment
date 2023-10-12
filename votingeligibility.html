@@ -1,0 +1,30 @@
+<!--
+WAP of javascript in html format to accept age of person in textbox and make a decision whether he can vote or not.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<h1> Voting Eligibility Checker</h1>
+	<label for="ageInput">Enter your age:</label>
+	<input type="number" id="ageInput">
+	<button onclick="checkVotingEligibility()">Check</button>
+	<p id="result"></p>
+	<script>
+		function checkVotingEligibility()
+		{
+			var age = document.getElementById("ageInput").value;
+			var resultMessage = "";
+
+			if(age>=18)
+			{
+				resultMessage = "You are eligible to vote!";
+			}
+			else
+			{
+				resultMessage = "You are not eligible to vote yet."
+			}
+			document.getElementById("result").textContent = resultMessage;
+		}
+	</script>
+</head>
+</html>
